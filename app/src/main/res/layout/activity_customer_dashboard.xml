@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100">
+
+    <!-- Header Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/secondary_color"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_coconut_logo"
+            android:contentDescription="Logo"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="Search products..."
+            android:padding="8dp"
+            android:background="@drawable/edittext_rounded"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_400"/>
+    </LinearLayout>
+
+    <!-- Category Tabs -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCategoryOil"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Coconut Oil"
+                android:textColor="@color/primary_color"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnCategoryFresh"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Fresh Coconut"
+                android:textColor="@color/primary_color"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnCategorySale"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sale"
+                android:textColor="@color/secondary_color"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Product List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_home"
+            android:contentDescription="Home"
+            android:padding="6dp"/>
+
+        <ImageView
+            android:id="@+id/btnCart"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_cart"
+            android:contentDescription="Cart"
+            android:padding="6dp"/>
+
+        <ImageView
+            android:id="@+id/btnProfile"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="Profile"
+            android:padding="6dp"/>
+
+        <ImageView
+            android:id="@+id/btnKnowledgeCenter"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_book"
+            android:contentDescription="Knowledge Center"
+            android:padding="6dp"/>
+    </LinearLayout>
+</LinearLayout>

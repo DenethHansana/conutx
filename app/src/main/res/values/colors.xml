@@ -1,0 +1,20 @@
+<resources>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_600">#757575</color>
+    <color name="orange">#FF9800</color>
+    <color name="green">#4CAF50</color>
+    <color name="primary_color">#0F9D58</color> <!-- Green button color -->
+    <color name="gray_200">#E0E0E0</color>
+    <color name="secondary_color">#FF5722</color>
+    <color name="red">#D32F2F</color>
+        <color name="teal_700">#00796B</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="red_500">#F44336</color>
+</resources>

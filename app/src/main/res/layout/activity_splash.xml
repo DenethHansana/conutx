@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Glow Circle Behind Logo -->
+    <ImageView
+        android:id="@+id/glowCircle"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bg_glow_circle"
+        android:scaleType="centerCrop"
+        android:alpha="0.6" />
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerInParent="true"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/ic_conutx_logo"
+        android:contentDescription="App Logo"
+        android:scaleType="centerInside"
+        android:elevation="12dp" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="CONUTx"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:shadowColor="#66000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="6" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Coconut Innovation at Your Fingertips"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:alpha="0.95" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button android:id="@+id/btnAddProduct" style="@style/ButtonPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add Product"/>
+        <Button android:id="@+id/btnViewProducts" style="@style/ButtonPrimary" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="View Products"/>
+        <Button android:id="@+id/btnLiveLocation" style="@style/ButtonPrimary" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Live Location"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

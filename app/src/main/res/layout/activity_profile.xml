@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"/>
+
+        <!-- Login / Signup Buttons -->
+        <LinearLayout
+            android:id="@+id/layoutLoginSignup"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnCustomerLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Customer Login"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/primary_color"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_rounded"/>
+
+            <Button
+                android:id="@+id/btnCustomerSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Customer Signup"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/secondary_color"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_rounded"/>
+
+            <Button
+                android:id="@+id/btnFarmerLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Farmer Login"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/primary_color"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_rounded"/>
+
+            <Button
+                android:id="@+id/btnFarmerSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Farmer Signup"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/secondary_color"
+                android:background="@drawable/button_rounded"/>
+        </LinearLayout>
+
+        <!-- Customer/Farmer Profile Fields -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Name"
+            android:padding="12dp"
+            android:background="@drawable/edittext_rounded"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Birthday"
+            android:padding="12dp"
+            android:background="@drawable/edittext_rounded"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Email"
+            android:padding="12dp"
+            android:background="@drawable/edittext_rounded"
+            android:layout_marginBottom="12dp"
+            android:inputType="textEmailAddress"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Contact Number"
+            android:padding="12dp"
+            android:background="@drawable/edittext_rounded"
+            android:layout_marginBottom="12dp"
+            android:inputType="phone"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Address"
+            android:padding="12dp"
+            android:background="@drawable/edittext_rounded"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Update Profile"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary_color"
+            android:background="@drawable/button_rounded"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

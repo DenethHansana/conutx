@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">conutx</string>
+
+        <!-- Other strings... -->
+
+        <string-array name="payment_methods">
+            <item>Cash on Delivery</item>
+            <item>Credit/Debit Card</item>
+            <item>Bank Transfer</item>
+            <item>PayPal</item>
+        </string-array>
+
+
+</resources>

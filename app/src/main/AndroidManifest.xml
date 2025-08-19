@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.s23010403.conutx">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KnowledgeCenterActivity"/>
+        <activity android:name=".BuyFormActivity"/>
+
+        <activity android:name=".CustomerLoginActivity"/>
+        <activity android:name=".CustomerSignupActivity"/>
+        <activity android:name=".FarmerLoginActivity"/>
+        <activity android:name=".FarmerSignupActivity"/>
+        <activity android:name=".CustomerDashboardActivity"/>
+        <activity android:name=".FarmerDashboardActivity"/>
+        <activity android:name=".AddProductActivity"/>
+        <activity android:name=".FarmerProductsListActivity"/>
+        <activity android:name=".ProductDetailsActivity"/>
+        <activity android:name=".CartActivity"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".SettingsActivity"/>
+        <activity android:name=".AboutActivity"/>
+        <activity android:name=".MapsActivity"/>
+    </application>
+</manifest>
